@@ -23,5 +23,7 @@ public class TestApplication {
 			System.out.println("Abhishek");
 		}
 
+		Child child = new Child(50, "ABCD");
+
 	}
 }
