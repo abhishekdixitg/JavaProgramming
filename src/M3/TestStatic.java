@@ -11,6 +11,7 @@ public class TestStatic {
 		System.out.println(Student.getCount());
 		Static.maxNumber(0, 0);
 		Singleton singleton = Singleton.getInstance();
+
 	}
 
 }
