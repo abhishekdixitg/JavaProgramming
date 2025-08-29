@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class RenterantExample {
 	private static int sharedVariable = 0;
 
-	private static ReentrantLock lock = new ReentrantLock();
+	private static ReentrantLock lock = new ReentrantLock(true);
 
 	public static void increment() {
 
