@@ -14,8 +14,9 @@ public class MapExample {
 		studentMap.put(101, "Student1");
 		studentMap.put(102, "Student2");
 		studentMap.put(103, "Student3");
-
-		System.out.println(studentMap);
+		studentMap.put(104, "Student4");
+		studentMap.put(105, "Student5");
+		System.out.println("HashMap -- > " + studentMap);
 
 		String studName = studentMap.get(102);
 		System.out.println(studName);
@@ -37,12 +38,15 @@ public class MapExample {
 
 		System.out.println(studentMap.containsKey(101));
 
-		Map<String, Integer> linkedMap = new LinkedHashMap<>(13, 0.3f, true);
+		Map<String, Integer> linkedMap = new LinkedHashMap<>();
+		// Map<String, Integer> linkedMap = new LinkedHashMap<>(13, 0.3f, true);
 
 		linkedMap.put("Apple", 10);
 		linkedMap.put("Orange", 20);
 		linkedMap.put("Banana", 30);
+		linkedMap.put("abc", 30);
 
+		System.out.println("LinkedHashMap --" + linkedMap);
 		linkedMap.get("Orange");
 		linkedMap.get("Apple");
 		Set<Entry<String, Integer>> linkedSet = linkedMap.entrySet();
