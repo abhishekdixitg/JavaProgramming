@@ -23,6 +23,7 @@ public class TestApplication {
 			System.out.println("Abhishek");
 		}
 
+		@SuppressWarnings("unused")
 		Child child = new Child(50, "ABCD");
 
 	}
